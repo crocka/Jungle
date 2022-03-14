@@ -3,6 +3,19 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   describe 'Validations' do
     # validation tests/examples here
+    describe 'saves' do
+      it 'should save' do
+        @category = Category.create(name: 'Automotive')
+        @product = Product.create(
+          name: 'Honda Civic',
+          price: 20000,
+          category: @category,
+          quantity: 10
+        )
+      expect(@product.errors.full_messages).to be_empty
+      end
+    end
+    
     describe 'No Quantity' do
 
       before do
