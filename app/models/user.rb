@@ -15,11 +15,11 @@ class User < ActiveRecord::Base
 
   def self.authenticate_with_credentials(email, password)
 
-    user = User.where "LOWER(email) LIKE '%#{email.strip.downcase}%'"
+    user = User.where "LOWER(email) = '#{email.strip.downcase}'"
 
-    if user && user.first.authenticate(password)
+    if user.first && user.first.authenticate(password)
 
-      return user
+      return user.first
 
     else
 
