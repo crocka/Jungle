@@ -175,7 +175,7 @@ RSpec.describe User, type: :model do
       it('should return the same user') do
         @user1 = User.authenticate_with_credentials('test@example.com', 'test0123456789')
 
-        expect(@user1).to eq(@user)
+        expect(@user1).to include(@user)
       end
     end
 
@@ -215,7 +215,7 @@ RSpec.describe User, type: :model do
       it('should return nil') do
         @user1 = User.authenticate_with_credentials('   test@example.com   ', 'test0123456789')
 
-        expect(@user1).to eq(@user)
+        expect(@user1).to include(@user)
       end
     end
 
@@ -225,7 +225,7 @@ RSpec.describe User, type: :model do
         
         @user = User.create(
           name: 'John',
-          email: 'tesT@example.com',
+          email: 'tesT@examplE.com',
           password: 'test0123456789',
           password_confirmation: 'test0123456789'
         )
@@ -235,7 +235,7 @@ RSpec.describe User, type: :model do
       it('should return user') do
         @user1 = User.authenticate_with_credentials('TEST@example.COM', 'test0123456789')
 
-        expect(@user1).to eq(@user)
+        expect(@user1).to include(@user)
       end
     end
 
