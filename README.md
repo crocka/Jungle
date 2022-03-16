@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2.
 
 ## Additional Steps for Apple M1 Machines
 
@@ -31,3 +31,19 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Screenshots
+### Main page with default set to Monday
+!["Main page with default set to Monday"](https://github.com/crocka/scheduler/blob/master/docs/mainpage_default_monday.png)
+### Switch to a different day
+!["Switch to a different day"](https://github.com/crocka/scheduler/blob/master/docs/swtich_to_different_day.png)
+### Adding an appointment by click the plus sign
+!["Adding an appointment by click the plus sign"](https://github.com/crocka/scheduler/blob/master/docs/adding_appointment_form.png)
+### Saving interface
+!["Saving interface"](https://github.com/crocka/scheduler/blob/master/docs/saving_interface.png)
+### The appointment shows up after adding it
+!["The appointment shows up after adding it"](https://github.com/crocka/scheduler/blob/master/docs/after_adding_appointment.png)
+### Deleting confimation after clicking trash icon
+!["Deleting confimation after clicking trash icon"](https://github.com/crocka/scheduler/blob/master/docs/delete_confirmation.png)
+### Deleting interface after delete confirmation
+!["Deleting interface after delete confirmation"](https://github.com/crocka/scheduler/blob/master/docs/deleting_interface.png)
